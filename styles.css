@@ -1,0 +1,810 @@
+/* Import Text font Url  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap');
+
+/* Default CSS settings */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+HTML{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.row{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+li{
+    list-style-type: none;
+}
+
+.title{
+    font-size: 56px;
+    color: white;
+    text-align: center;
+    animation: landing__rightsection-text 2000ms ease;
+    /* text-transform: uppercase; */
+}
+
+
+
+/* CSS FOR Navigation Bar */
+
+#navigation__bar{
+    width: 100%;
+    /* height: 100vh; */
+    /* background-image: url(assets/test2.jpg); */
+    background-image: url(assets/test6.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    
+    
+    
+    
+}
+
+.navigation__links{
+    display: flex;
+    
+}
+
+.navigation__link--list{
+    margin: 0 18px;
+    animation: fading-in 4000ms ease;
+}
+
+.nav__link--edit{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 400;
+    
+    
+}
+
+.navlink__hover--effect:hover{
+    color: red;
+    transition: all 400ms ease-out;
+}
+
+.Nav__logo--heading{
+    font-size: 44px;
+    font-weight: 700;
+    color: white;
+    animation: fading-in-navtitle 4000ms ease;
+}
+
+@keyframes fading-in{
+
+    0%{
+        opacity: 0;
+        transform: translateX(150px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fading-in-navtitle{
+
+    0%{
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+/* CSS FOR Landing Page */
+
+.landing__pagepicture--ibby{
+    width: 300px;
+    border-radius: 10%;
+    animation: landing__imgmover 4000ms ease;
+}
+
+.landingpage__wrapper{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 128px 0;
+  
+    
+}
+
+.landing__leftsection{
+    float: left;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.landing__rightsection{
+    float: right;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+  
+}
+
+.landing__para{
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    padding-top: 24px;
+    animation: landing__rightsection-text 4000ms ease;
+}
+
+.landing__subheading{
+    font-size: 32px;
+    text-align: center;
+    padding-top: 12px;
+    color: white;
+    animation: landing__rightsection-text 4000ms ease;
+}
+
+.social__link--list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links__icon:hover{
+    color: red;
+}
+
+.links__icon{
+    padding: 40px 24px;
+    font-size: 24px;
+    animation: landing__rightsection-text 4000ms ease;
+}
+
+.scroll{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.scroll_icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.scroll_icon:hover{
+    color: red;
+    transition: all 1000ms ease;
+}
+
+@keyframes landing__rightsection-text {
+    0% {color: black;}
+    100% {color: white;}
+}
+
+@keyframes landing__imgmover{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+
+/* Burger Menu */
+
+.burger__dropbutton{
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    display: none;
+    
+}
+
+.burgermenu__background{
+    position: absolute;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden ;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    transition: all 500ms ease-in;
+}
+
+.open--burgermenu .burgermenu__background{
+    visibility: visible;
+    opacity: 1;
+}
+
+.open--burgermenu{
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.btn__menu--close{
+    position: absolute;
+    margin-top: 16px;
+    right: 10px;
+    font-size: 20px ;
+    color: white;
+    background-color: transparent;
+    border: none;
+    
+}
+
+.burgermenu__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.option__list:hover .burger_link{
+    color: red;
+}
+
+.burger_link{
+    font-size: 64px;
+}
+
+.option__list{
+    padding: 24px 0;
+}
+
+/* CSS For Tech Stack */
+
+#technology__Stack{
+    display: flex;
+    flex-direction: column;
+    background-image: url(assets/test6.jpg);
+    background-size: cover;
+    padding: 96px 0px;
+}
+
+.stack__title{
+    font-size: 56px;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.Stack__subheading{
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.stack__right--img{
+    width: 100%;
+    max-width: 100px;
+    transition: all 500ms ease;
+
+}
+
+.stack__right{
+    width: 50%;
+    float: right;
+    padding-top: 48px;
+}
+
+.stack__left{
+    width: 50%;
+    float: left;
+}
+
+.stack__list{
+    width: 33.3%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 16px;
+}
+
+.stack__list--wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    
+}
+
+.stack__description{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    transform: scale(0);
+    transition: all 500ms ease;
+    padding-top: 12PX;
+}
+
+.stack__list:hover .stack__description{
+    transform: scale(1);
+}
+
+.stack__list:hover .stack__right--img{
+    transform: scale(1.1);
+    filter: brightness(110%);
+    
+}
+
+/* CSS For Projects */
+
+#Projects{
+    display: flex;
+    flex-direction: column;
+    background-image: url(assets/test6.jpg);
+    background-size: cover;
+    padding: 80px 0px;
+}
+
+.project__header,
+.project__subheader{
+    color: white;
+    text-align: center;
+    font-weight: 700;
+}
+
+.project__subheader{
+    font-size: 32px;
+}
+.project__header{
+    font-size: 56px;
+}
+
+.project__img{
+    width: 100%;
+}
+
+.project{
+    padding-top: 32px;
+}
+
+.project__wrapper{
+    position: relative;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+
+.project__description{
+    position: absolute;
+    color: black;
+    backdrop-filter: blur(10px);
+    /* max-width: 40%; */
+    width: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    opacity: 0;
+}
+
+.project__wrapper:hover .project__description{
+
+    opacity: 1;
+    transition: all 600ms ease;
+    /* transition: width 0.3s; */
+    width:100%; 
+    transition-timing-function: linear;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.project__wrapper:hover .project__title,
+.project__wrapper:hover .project__languages,
+.project__wrapper:hover .project_desc--paragraph,
+.project__wrapper:hover .links__icon--black {
+    opacity: 1;
+    transition-delay: 0.6s;
+    transition-timing-function: linear;
+
+}
+
+.project__wrapper:hover .project__img{
+    /* filter: blur(20px); */
+    transition: all 400ms ease;
+}
+
+.project__title, 
+.project__languages, 
+.project_desc--paragraph{
+    text-align: center;
+    opacity: 0;
+}
+
+.project__title{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.project__languages{
+    font-size: 32px;
+    font-weight: 400;
+
+}
+
+.project_desc--paragraph{
+    font-size: 24px;
+    padding-top: 16px;
+    margin: 0px 64px;
+    text-wrap: wrap;
+}
+
+.links__icon--black{
+    color: black;
+    opacity: 0;
+    padding-top: 16px;
+    font-size: 24px;
+    padding-left: 12px;
+}
+
+/* CSS For Contact Me Page */
+
+/* #ContactMe{
+    display: flex;
+    flex-direction: column;
+    background-image: url(assets/test6.jpg);
+    background-size: cover;
+    padding: 80px 0px;
+}
+
+.form__firstrow,
+.form__secondrow,
+.form__thirdrow{
+    color: white;
+    font-size: 24px;
+}
+
+
+.form__firstrow{
+    display: flex;
+    padding-top: 16px;
+}
+
+.firstrow__text{
+    margin: 0 2px;
+}
+
+.form__secondrow{
+    padding-top: 16px;
+}
+
+.form__wrapper .firstrow__text,
+.form__wrapper .secondrow__text,
+.form__wrapper input[type = "email"]{
+    width: 100%;
+    padding: 16px;
+}
+
+ .textarea__text{
+    padding: 56px;
+    width: 100%;
+    padding: 5px 0px 200px 10px;
+}
+
+.submitbtn__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit__btn{
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.submit__btn:hover{
+    color: red;
+} */
+
+
+/* Footer CSS */
+
+
+footer{
+    background-image: linear-gradient(black, white);
+}
+
+.footer_logo{
+    margin-bottom: 20px;
+}
+
+.footer_social--list{
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-around; 
+    max-width: 500px;
+}
+
+.footer_row{
+    /* Align the footer links centerally both hortizontally and vertically */
+    padding: 8% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_social--link{
+    
+    color: black;
+    text-decoration: none;
+    padding-top: 16px;
+    font-weight: 700;
+
+}
+
+.heading__footer{
+    color: black;
+}
+
+.link__hover--effect:hover{
+    color: red;
+}
+.footer__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+
+   #navigation__bar{
+    background-image: cover;
+    overflow-x: hidden;
+   }
+
+    .Nav__logo--heading{
+        font-size: 24px;
+    }
+
+    .landing__pagepicture--ibby{
+        width: 150px
+    }
+
+    .nav__link--edit{
+        display: none;
+    }
+
+    .landingpage__wrapper{
+        display: flex;
+        flex-direction: column;
+        padding: 16px 0;
+        
+    }
+
+    .title{
+        font-size: 48px;
+    }
+
+    .landing__subheading{
+        font-size: 32px;
+    }
+
+    .landing__para{
+        font-size: 16px;
+    }
+
+    .scroll{
+        display: none;
+    }
+
+    .stack__title,
+    .project__header{
+        font-size: 32px;
+    }
+
+    .Stack__subheading,
+    .project__subheader{
+        font-size: 24px;
+    }
+
+    .technology__Stack{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .stack__left--img{
+        /* display: none; */
+        padding-top: 12px;
+        width: 100%
+    }
+
+    .stack__both--wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .stack__list{
+        width: calc(100%/2);
+    }
+
+    .stack__description{
+        font-size: 16px;
+    }
+
+
+    .project__list{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project__title{
+        font-size:16px;
+    }
+
+    .project__languages{
+        font-size: 16px;
+    }
+
+    .project_desc--paragraph{
+        display: none;
+    }
+    
+    .links__icon--black{
+        font-size: 16px;
+    }
+
+    .project{
+        padding: 24px 24px;
+    }
+
+    .burger__dropbutton{
+        display: block;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+
+    .Nav__logo--heading{
+        font-size: 32px;
+    }
+
+    .nav__link--edit{
+       font-size: 16px;
+    }
+
+
+    .landingpage__wrapper{
+        display: flex;
+        flex-direction: column;
+        padding: 16px 0;
+    }
+
+    .landing__pagepicture--ibby{
+        width: 200px
+    }
+
+    .title{
+        font-size: 48px;
+    }
+
+    .landing__subheading{
+        font-size: 32px;
+    }
+
+    .landing__para{
+        font-size: 16px;
+    }
+
+    .scroll{
+        display: none;
+    }
+
+    .stack__title,
+    .project__header{
+        font-size: 32px;
+    }
+
+    .Stack__subheading,
+    .project__subheader{
+        font-size: 24px;
+    }
+
+    .stack__both--wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .stack__left--img{
+        /* display: none; */
+        padding-top: 12px;
+        width: 100%
+    }
+
+    .project__list{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project{
+        padding: 24px 24px;
+    }
+
+    .project__title{
+        font-size:16px;
+    }
+
+    .project__languages{
+        font-size: 16px;
+    }
+
+    .project_desc--paragraph{
+        font-size: 16px;
+    }
+    
+    .links__icon--black{
+        font-size: 16px;
+    }
+
+
+}

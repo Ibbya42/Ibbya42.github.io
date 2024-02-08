@@ -427,6 +427,7 @@ li{
 .project__description{
     position: absolute;
     color: black;
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     /* max-width: 40%; */
     width: 0;

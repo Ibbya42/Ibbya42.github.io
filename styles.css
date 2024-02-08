@@ -462,6 +462,8 @@ li{
 .project__wrapper:hover .project__img{
     /* filter: blur(20px); */
     transition: all 400ms ease;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 .project__title, 

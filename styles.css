@@ -427,7 +427,6 @@ li{
 .project__description{
     position: absolute;
     color: black;
-    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     /* max-width: 40%; */
     width: 0;
@@ -442,6 +441,8 @@ li{
     opacity: 1;
     transition: all 600ms ease;
     /* transition: width 0.3s; */
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     width:100%; 
     transition-timing-function: linear;
     display: flex;
@@ -462,8 +463,7 @@ li{
 .project__wrapper:hover .project__img{
     /* filter: blur(20px); */
     transition: all 400ms ease;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    
 }
 
 .project__title, 

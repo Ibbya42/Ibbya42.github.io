@@ -10,6 +10,7 @@
 
 HTML{
     scroll-behavior: smooth;
+    transition: all 1000ms ease;
     overflow-x: hidden;
 }
 
